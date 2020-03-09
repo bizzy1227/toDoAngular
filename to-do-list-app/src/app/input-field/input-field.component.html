@@ -1,0 +1,4 @@
+<label>Task text:
+  <input #taskText />
+</label>
+<button (click)="add(taskText.value); taskText.value=''">Add task</button>

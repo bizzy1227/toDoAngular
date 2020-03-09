@@ -1,0 +1,27 @@
+ .wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  font-size: 20px;
+ }
+
+ li {
+   list-style-type: none;
+   border: 1px solid black;
+   width: 600px;
+   display: flex;
+   align-items: center;
+   margin: 10px;
+ }
+
+ span{
+   width: 100%;
+ }
+
+ li > button {
+   float: right;
+ }
+
+
