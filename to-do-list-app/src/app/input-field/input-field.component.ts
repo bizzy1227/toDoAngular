@@ -1,26 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import { ItemList } from '../itemList';
-import { LIST } from '../mock-ietms';
+import { TasksService } from '../tasks.service';
+
 
 @Component({
   selector: 'app-input-field',
   templateUrl: './input-field.component.html',
-  styleUrls: ['./input-field.component.css']
+  styleUrls: ['./input-field.component.css'],
+  providers: [TasksService]
 })
 export class InputFieldComponent implements OnInit {
 
-  text: String;
-  list = LIST;
 
-  constructor() { }
+  constructor(private tasksService: TasksService) { }
 
   ngOnInit(): void {
   }
 
-  add(text: string): void {
-    console.log(text);
-    this.list.push({
-      text: text
-    });
+  add(text: string){
+    this.tasksService.add(text);
   }
+
 }
