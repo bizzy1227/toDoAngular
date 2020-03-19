@@ -1,0 +1,7 @@
+<label>Login:
+    <input #logText placeholder="123"/>
+</label>
+<label>Password:
+    <input #passText  placeholder="123"/>
+</label>
+  <button (click)="sendValidate(logText.value, passText.value)">login</button>

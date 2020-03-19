@@ -10,10 +10,10 @@ import { TasksService } from '../tasks.service';
 })
 export class InputFieldComponent implements OnInit {
 
-
   constructor(private tasksService: TasksService) { }
 
   ngOnInit(): void {
+
   }
 
   add(text: string){

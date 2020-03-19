@@ -1,0 +1,12 @@
+<h2>User Profile</h2>
+<div>
+  <label>
+    Login:
+    <input #newLog [(ngModel)]="login">
+  </label>
+  <label>
+      Password:
+      <input #newPass [(ngModel)]="password">
+  </label>
+  <button (click)="sendNewData(newLog.value, newPass.value)">SAVE</button>
+</div>
